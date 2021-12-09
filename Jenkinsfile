@@ -5,6 +5,7 @@ pipeline {
   parameters {
     string(name: 'TARGET', defaultValue: '', description: "Run Target Scripts")
   }
+  stages {
     stage ('Build') {
       steps {
         echo 'Running The Requirements...'
@@ -54,4 +55,5 @@ pipeline {
         }
       }
     }
+  }
 }
