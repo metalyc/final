@@ -11,6 +11,11 @@ pipeline {
         sh 'pip install -r requirements.txt'
         echo 'Requirements Complete!'
       }
+      post {
+        always {
+          echo 'A00855286 Group 42'
+        }
+      }
     }
     stage ('Code Quality') {
       steps {
