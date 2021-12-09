@@ -40,9 +40,9 @@ pipeline {
         }
       }
       steps {
-        python3 'main.py phone text output'
-        python3 'main.py tablet csv output'
-        python3 'main.py laptop json output'
+        pytest 'main.py phone text output'
+        pytest 'main.py tablet csv output'
+        pytest 'main.py laptop json output'
       }
     }
     stage ('Zip') {
