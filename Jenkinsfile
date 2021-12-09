@@ -3,7 +3,7 @@
 pipeline {
   agent any
   parameters {
-    string(name: 'TARGET', defaultValue: 'run', description: "Run Target Scripts")
+    string(name: 'TARGET', defaultValue: '', description: "Run Target Scripts")
   }
   stages {
     stage ('Build') {
